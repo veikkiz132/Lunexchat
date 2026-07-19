@@ -1,63 +1,155 @@
 <!DOCTYPE html>
 <html lang="fi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kirjaudu - LunexChat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LunexChat</title>
 
-<link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
 
-<style>
-.login-box{
-    width:400px;
-    margin:120px auto;
-    background:#1e1e1e;
-    padding:35px;
-    border-radius:15px;
-}
+        body{
+            background:#121212;
+            color:white;
+        }
 
-.login-box h1{
-    text-align:center;
-}
+        header{
+            background:#1e1e1e;
+            padding:20px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
 
-.login-box input{
-    width:100%;
-    padding:15px;
-    margin-top:15px;
-    border:none;
-    border-radius:10px;
-    background:#2b2b2b;
-    color:white;
-}
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+            font-weight:bold;
+            transition:0.3s;
+        }
 
-.login-box button{
-    width:100%;
-    margin-top:20px;
-}
-</style>
+        nav a:hover{
+            color:#00e676;
+        }
+
+        .hero{
+            text-align:center;
+            padding:100px 20px;
+        }
+
+        .hero h1{
+            font-size:60px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:22px;
+            color:#bbbbbb;
+            margin-bottom:40px;
+        }
+
+        button{
+            background:#00c853;
+            color:white;
+            border:none;
+            padding:15px 35px;
+            font-size:18px;
+            border-radius:12px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#00e676;
+            transform:scale(1.05);
+        }
+
+        .features{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:25px;
+            padding:50px;
+        }
+
+        .card{
+            background:#1e1e1e;
+            width:280px;
+            padding:25px;
+            border-radius:15px;
+            text-align:center;
+        }
+
+        .card h3{
+            margin-bottom:15px;
+            color:#00e676;
+        }
+
+        footer{
+            text-align:center;
+            padding:30px;
+            color:#888;
+            margin-top:40px;
+        }
+    </style>
 
 </head>
 <body>
 
-<div class="login-box">
+<header>
 
-<h1>LunexChat</h1>
+    <h2>🎵 LunexChat</h2>
 
-<input type="email" placeholder="Sähköposti">
+    <nav>
+        <a href="#">Musiikki</a>
+        <a href="chat.html">Chat</a>
+        <a href="#">Profiili</a>
+    </nav>
 
-<input type="password" placeholder="Salasana">
+</header>
 
-<button onclick="window.location.href='chat.html'">
-Kirjaudu
-</button>
+<section class="hero">
 
-<br><br>
+    <h1>Tervetuloa LunexChatiin</h1>
 
-<center>
-<a href="register.html">Luo uusi käyttäjä</a>
-</center>
+    <p>Kuuntele musiikkia ja keskustele ystävien kanssa yhdessä paikassa.</p>
 
+    <button onclick="window.location.href='chat.html'">
+        Aloita
+    </button>
+
+</section>
+
+<section class="features">
+
+<div class="card">
+<h3>💬 Keskustele</h3>
+<p>Chattaa kavereiden kanssa reaaliajassa.</p>
 </div>
+
+<div class="card">
+<h3>🎵 Musiikki</h3>
+<p>Kuuntele suosikkikappaleitasi samalla kun keskustelet.</p>
+</div>
+
+<div class="card">
+<h3>👥 Kaverit</h3>
+<p>Löydä uusia ihmisiä ja aloita keskustelu.</p>
+</div>
+
+</section>
+
+<footer>
+
+© 2026 LunexChat
+
+</footer>
 
 </body>
 </html>
